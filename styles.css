@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f3f4f7;
+    color: #3e4c59;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.app-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.app-title {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.task-input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.add-task-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.add-task-button:hover {
+    background-color: #45a049;
+}
+
+.task-list {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+.task-list li {
+    background-color: #f1f1f1;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    color: #3e4c59;
+}
+
+.task-list li.completed {
+    background-color: #d4edda;
+    text-decoration: line-through;
+    color: #6c757d;
+}
+
+.delete-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+}
+
+.delete-button:hover {
+    background-color: #e53935;
+}
+
+/* Theme Toggle Button (Sparkle Icon) */
+.theme-toggle-button {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: color 0.3s;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #2c2c2c;
+    color: white;
+}
+
+.app-container.dark-mode {
+    background-color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.task-list li.dark-mode {
+    background-color: #444;
+    color: white;
+}
+
+.task-input.dark-mode {
+    border-color: #666;
+    background-color: #555;
+    color: white;
+}
+
+.add-task-button.dark-mode {
+    background-color: #009688;
+}
+
+.delete-button.dark-mode {
+    background-color: #e53935;
+}
+
+.add-task-button:hover.dark-mode {
+    background-color: #00796b;
+}
+
+.delete-button:hover.dark-mode {
+    background-color: #c62828;
+}
