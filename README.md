@@ -23,7 +23,7 @@ You can preview the To-Do List app in action by cloning the repository and openi
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/to-do-list-app.git
+   git clone https://github.com/Muzammilify/Simple-To-Do-List-App.git
 
 2. Open the index.html file: Open index.html in any web browser to run the app.
 
